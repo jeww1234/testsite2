@@ -12,140 +12,16 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-    .me-free {
-        margin-right: 50px;
-    }
-
-    .navLink2 {
-        font-size: clamp(1rem, 1.4vw, 1.5rem);
-        font-weight: 550;
-    }
-
-    .navList a {
-        text-decoration: none;
-        color: black;
-        font-size: 0.8rem;
-    }
-
-
-    .navbar-brand2 {
-        font-style: italic;
-        font-weight: bolder;
-        font-size: 1.8vw;
-    }
-
-    .footerContent {
-        background-color: rgb(236, 236, 236);
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .fContent {
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        font-weight: bolder;
-        font-size: clamp(0.7rem, 1.5vw, 2rem);
-    }
-
-    .btCListBox {
-        display: flex;
-        justify-content: center;
-    }
-
-    .btCList {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btCList img {
-        width: clamp(2vw, 3vw, 4vw);
-        height: clamp(2vw, 3vw, 4vw);
-        border-radius: 25px;
-    }
-
-    .btCList span {
-        margin: 0 10px 0 5px;
-        font-size: clamp(0.5rem, 1vw, 2vw);
-    }
-
-    .btNav {
-        display: flex;
-        justify-content: center;
-        font-size: 0.7rem;
-    }
-
-    .footerIf {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .footerIf img {
-        width: clamp(15rem, 8rem, 15rem);
-        /* 화면 크기에 따라 이미지 크기 조정 */
-        height: calc(auto - 0.5rem);
-        /* 비율 유지 */
-        padding: 10px;
-    }
-
-
-    .region {
-        border-bottom: 0.5px solid rgb(189, 189, 189);
-        border-top: 0.5px solid rgb(189, 189, 189);
-        padding: 10px 0;
-    }
-
-    .regionList {
-        font-size: clamp(0.6rem, 1vw, 1.5vw);
-        font-weight: bolder;
-        max-width: 90%;
-
-    }
-
-    .test a:hover {
-        color: aquamarine;
-        font-weight: bolder;
-    }
-
-    .nav-item a:hover {
-        color: rgb(102, 187, 159);
-    }
-
-    .navbarButton {
-        margin-right: -30px;
-    }
-
-    @media (max-width: 1199px) {
-        .navList a {
-            font-size: 0.6rem;
-            /* 작은 화면에서는 조금 더 작은 폰트 크기 */
-        }
-
-        .navLink2 {
-            font-size: clamp(1rem, 1vw, 1.2rem);
-            font-weight: 550;
-        }
-
-        .navbar-brand2 {
-            font-style: italic;
-            font-weight: bolder;
-            font-size: clamp(1.4rem, 1.8vw, 1.8rem);
-        }
-    }
-</style>
 
 <body>
     <!-- 헤더 영역 -->
     <div class="container">
         <nav class="navbar navbar-expand-lg p-3">
             <div class="container-fluid navbarTcontainer">
-                <a class="navbar-brand navbar-brand2 text-center mx-auto" href="#">지구촌 구석구석</a>
+                <a class="navbar-brand2 text-center mx-auto" href="#">지구촌 구석구석</a>
                 <button class="navbar-toggler navbarButton" type="button" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" style="width: 25px; height: 25px;"></span>
                 </button>
                 <div class="collapse collapse-horizontal navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-free mb-2 ms-3 mb-lg-0">
@@ -166,7 +42,6 @@
                         <a href="">고객센터</a>
                     </div>
 
-                    <!-- Example single danger button -->
                     <div class="btn-group ms-3">
                         <button type="button" class="btn btn-primary dropdown-toggle">
                             글쓰기
@@ -185,22 +60,22 @@
                     홈
                 </div>
                 <div class="col">
-                    지역
+                    서울
                 </div>
                 <div class="col">
-                    지역
+                    인천
                 </div>
                 <div class="col">
-                    지역
+                    부산
                 </div>
                 <div class="col">
-                    지역
+                    대구
                 </div>
                 <div class="col">
-                    지역
+                    전주
                 </div>
                 <div class="col">
-                    지역
+                    제주
                 </div>
             </div>
         </div>
@@ -215,30 +90,34 @@
         <div class="container fContent">
             <div>추천 여행지를 SNS에서 만나보세요!</div>
         </div>
-        
+
         <!-- SNS 아이콘 영역 -->
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="d-flex justify-content-center flex-wrap">
                         <div class="btCList d-flex">
-                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
-                            <span>블로그</span>
+                            <img src="https://w7.pngwing.com/pngs/396/246/png-transparent-logo-tik-tok-thumbnail.png"
+                                alt="">
+                            <span>티톡</span>
                         </div>
                         <div class="btCList d-flex">
-                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
-                            <span>포스트</span>
+                            <img src="https://store-images.s-microsoft.com/image/apps.26737.9007199266244427.c75d2ced-a383-40dc-babd-1ad2ceb13c86.ed1d047e-03d9-4cd8-a342-c4ade1e58951"
+                                alt="">
+                            <span>트위터</span>
                         </div>
                         <div class="btCList d-flex">
-                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
+                            <img src="https://blog.kakaocdn.net/dn/UGS0q/btree5Viurw/l07AH1VgWJHm4stsAHLdL0/img.png"
+                                alt="">
                             <span>페이스북</span>
                         </div>
                         <div class="btCList d-flex">
-                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
+                            <img src="https://w7.pngwing.com/pngs/454/401/png-transparent-logo-instagram-text-logo-number-thumbnail.png"
+                                alt="">
                             <span>인스타그램</span>
                         </div>
                         <div class="btCList d-flex">
-                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2504/2504848.png" alt="">
                             <span>유튜브</span>
                         </div>
                     </div>
@@ -270,34 +149,45 @@
         </div>
     </div>
 
-        <div class="btIfor container">
-            123123
+    <div class="btIfor container">
+        <div class="firstBtIfor">
+            <a href="">개인정보처리방침</a>
+            <a href="">이용약관</a>
+            <a href="">위치기반서비스 이용약관</a>
+            <a href="">저작권정책책</a>
+            <a href="">고객서비스헌장</a>
+            <a href="">전자우편무단수집거부</a>
+            <a href="">Q&A</a>
+            <a href="">찾아오시는 길</a>
+            <a href="">사이트맵 길</a>
         </div>
+        <div class="secondBtIfor">
+            <span>(우)26464 강원특별자치도 원주시 세계로 10 TEL : 12-345-6789 사업자등록번호 : 123-45-678999 통신판매업신고 :
+                제1234-서울중구-5678호</span>
+        </div>
+    </div>
 
-        <div class="container footerIf">
-            <!-- 4x1 레이아웃 (작은 화면에서 기본적으로 1개씩 세로로 표시) -->
-            <div class="row g-4 row-cols-2 row-cols-sm-2 row-cols-md-4">
-                <div class="col d-flex justify-content-center">
-                    <img src="https://co-worker.co.kr/application/resources/upload/logo_img/1663054040205045.png"
-                        alt="Image 1" class="img-fluid" style="border: 1px solid black;">
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlQTuT-XCWyiEEdVl8UpgtrnYTRDiDse2eA&s"
-                        alt="Image 2" class="img-fluid" style="border: 1px solid black;">
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <img src="https://www.hanatourcompany.com/upload/editor/427f50bc5dff407da4cdfa20d6971052.jpg"
-                        alt="Image 3" class="img-fluid" style="border: 1px solid black;">
-                </div>
-                <div class="col d-flex justify-content-center">
-                    <img src="https://logo-pick.com/logo/%EC%9D%B8%ED%84%B0%ED%8C%8C%ED%81%AC%ED%88%AC%EC%96%B4/%EA%B8%B0%EB%B3%B8/%EC%9D%B8%ED%84%B0%ED%8C%8C%ED%81%AC%ED%88%AC%EC%96%B4_%EA%B8%B0%EB%B3%B8.png"
-                        alt="Image 4" class="img-fluid" style="border: 1px solid black;">
-                </div>
+    <div class="container footerIf">
+        <!-- 4x1 레이아웃 (작은 화면에서 기본적으로 1개씩 세로로 표시) -->
+        <div class="row g-4 row-cols-sm-4 row-cols-md-4">
+            <div class="col d-flex justify-content-center">
+                <img src="https://co-worker.co.kr/application/resources/upload/logo_img/1663054040205045.png"
+                    alt="Image 1" class="img-fluid">
+            </div>
+            <div class="col d-flex justify-content-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlQTuT-XCWyiEEdVl8UpgtrnYTRDiDse2eA&s"
+                    alt="Image 2" class="img-fluid">
+            </div>
+            <div class="col d-flex justify-content-center">
+                <img src="https://www.hanatourcompany.com/upload/editor/427f50bc5dff407da4cdfa20d6971052.jpg"
+                    alt="Image 3" class="img-fluid">
+            </div>
+            <div class="col d-flex justify-content-center">
+                <img src="https://logo-pick.com/logo/%EC%9D%B8%ED%84%B0%ED%8C%8C%ED%81%AC%ED%88%AC%EC%96%B4/%EA%B8%B0%EB%B3%B8/%EC%9D%B8%ED%84%B0%ED%8C%8C%ED%81%AC%ED%88%AC%EC%96%B4_%EA%B8%B0%EB%B3%B8.png"
+                    alt="Image 4" class="img-fluid">
             </div>
         </div>
-    
-
-    <script src="./script.js"></script>
+    </div>
 </body>
 
 </html>
