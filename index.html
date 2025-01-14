@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .me-free {
+        margin-right: 50px;
+    }
+
+    .navLink2 {
+        font-size: clamp(1rem, 1.4vw, 1.5rem);
+        font-weight: 550;
+    }
+
+    .navList a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.8rem;
+    }
+
+
+    .navbar-brand2 {
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 1.8vw;
+    }
+
+    .footerContent {
+        background-color: rgb(236, 236, 236);
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .fContent {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        font-size: clamp(0.7rem, 1.5vw, 2rem);
+    }
+
+    .btCListBox {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btCList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btCList img {
+        width: clamp(2vw, 3vw, 4vw);
+        height: clamp(2vw, 3vw, 4vw);
+        border-radius: 25px;
+    }
+
+    .btCList span {
+        margin: 0 10px 0 5px;
+        font-size: clamp(0.5rem, 1vw, 2vw);
+    }
+
+    .btNav {
+        display: flex;
+        justify-content: center;
+        font-size: 0.7rem;
+    }
+
+    .footerIf {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footerIf img {
+        width: clamp(15rem, 8rem, 15rem);
+        /* 화면 크기에 따라 이미지 크기 조정 */
+        height: calc(auto - 0.5rem);
+        /* 비율 유지 */
+        padding: 10px;
+    }
+
+
+    .region {
+        border-bottom: 0.5px solid rgb(189, 189, 189);
+        border-top: 0.5px solid rgb(189, 189, 189);
+        padding: 10px 0;
+    }
+
+    .regionList {
+        font-size: clamp(0.6rem, 1vw, 1.5vw);
+        font-weight: bolder;
+        max-width: 90%;
+
+    }
+
+    .test a:hover {
+        color: aquamarine;
+        font-weight: bolder;
+    }
+
+    .nav-item a:hover {
+        color: rgb(102, 187, 159);
+    }
+
+    .navbarButton {
+        margin-right: -30px;
+    }
+
+    @media (max-width: 1199px) {
+        .navList a {
+            font-size: 0.6rem;
+            /* 작은 화면에서는 조금 더 작은 폰트 크기 */
+        }
+
+        .navLink2 {
+            font-size: clamp(1rem, 1vw, 1.2rem);
+            font-weight: 550;
+        }
+
+        .navbar-brand2 {
+            font-style: italic;
+            font-weight: bolder;
+            font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+        }
+    }
+</style>
+
+<body>
+    <!-- 헤더 영역 -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg p-3">
+            <div class="container-fluid navbarTcontainer">
+                <a class="navbar-brand navbar-brand2 text-center mx-auto" href="#">지구촌 구석구석</a>
+                <button class="navbar-toggler navbarButton" type="button" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse collapse-horizontal navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-free mb-2 ms-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link navLink2" aria-current="page" href="#">국내</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink2" href="#">해외</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" style="width: 40%;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" style="white-space: nowrap;">검색</button>
+                    </form>
+                    <div class="ms-3 navList">
+                        <a href="">로그인</a> |
+                        <a href="">회원가입</a> |
+                        <a href="">고객센터</a>
+                    </div>
+
+                    <!-- Example single danger button -->
+                    <div class="btn-group ms-3">
+                        <button type="button" class="btn btn-primary dropdown-toggle">
+                            글쓰기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 지역 카테고리 -->
+    <div class="region">
+        <div class="container text-center">
+            <div class="row g-0 regionList">
+                <div class="col">
+                    홈
+                </div>
+                <div class="col">
+                    지역
+                </div>
+                <div class="col">
+                    지역
+                </div>
+                <div class="col">
+                    지역
+                </div>
+                <div class="col">
+                    지역
+                </div>
+                <div class="col">
+                    지역
+                </div>
+                <div class="col">
+                    지역
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 영역 -->
+    <div class="main" style="width: 100%; height: 600px; background-color: rgb(255, 245, 235);">main</div>
+
+
+    <!-- 푸터 영역 -->
+    <div class="footerContent">
+        <div class="container fContent">
+            <div>추천 여행지를 SNS에서 만나보세요!</div>
+        </div>
+        
+        <!-- SNS 아이콘 영역 -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div class="btCList d-flex">
+                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
+                            <span>블로그</span>
+                        </div>
+                        <div class="btCList d-flex">
+                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
+                            <span>포스트</span>
+                        </div>
+                        <div class="btCList d-flex">
+                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
+                            <span>페이스북</span>
+                        </div>
+                        <div class="btCList d-flex">
+                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
+                            <span>인스타그램</span>
+                        </div>
+                        <div class="btCList d-flex">
+                            <img src="https://cdn.pixabay.com/photo/2022/02/12/21/02/heather-7009924_1280.jpg" alt="">
+                            <span>유튜브</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-2 btImg">
+                <div class="col">
+                    <img src="https://korean.visitkorea.or.kr/resources/images/common/fot_link_banner8.png?v=20230808001"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.visitkorea.or.kr/resources/images/common/fot_link_banner3.gif"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.visitkorea.or.kr/resources/images/common/fot_link_banner6.gif"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="https://cdn.visitkorea.or.kr/resources/images/common/fot_link_banner4.gif"
+                        class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="btIfor container">
+            123123
+        </div>
+
+        <div class="container footerIf">
+            <!-- 4x1 레이아웃 (작은 화면에서 기본적으로 1개씩 세로로 표시) -->
+            <div class="row g-4 row-cols-2 row-cols-sm-2 row-cols-md-4">
+                <div class="col d-flex justify-content-center">
+                    <img src="https://co-worker.co.kr/application/resources/upload/logo_img/1663054040205045.png"
+                        alt="Image 1" class="img-fluid" style="border: 1px solid black;">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlQTuT-XCWyiEEdVl8UpgtrnYTRDiDse2eA&s"
+                        alt="Image 2" class="img-fluid" style="border: 1px solid black;">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://www.hanatourcompany.com/upload/editor/427f50bc5dff407da4cdfa20d6971052.jpg"
+                        alt="Image 3" class="img-fluid" style="border: 1px solid black;">
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://logo-pick.com/logo/%EC%9D%B8%ED%84%B0%ED%8C%8C%ED%81%AC%ED%88%AC%EC%96%B4/%EA%B8%B0%EB%B3%B8/%EC%9D%B8%ED%84%B0%ED%8C%8C%ED%81%AC%ED%88%AC%EC%96%B4_%EA%B8%B0%EB%B3%B8.png"
+                        alt="Image 4" class="img-fluid" style="border: 1px solid black;">
+                </div>
+            </div>
+        </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

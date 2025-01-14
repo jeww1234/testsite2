@@ -1,0 +1,56 @@
+.footerContent{
+    background-color: rgb(236, 236, 236);
+    height: 440px;
+}
+.fContent{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btCListBox{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+.btCList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btNav{
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+.footerIf{
+    display: flex;
+    justify-content: center;
+}
+.footerIf img{
+    width: 175px; height: 75px;
+    padding: 10px;
+}
+
+.test{
+    border-bottom: 0.5px solid rgb(189, 189, 189);
+    border-top: 0.5px solid rgb(189, 189, 189);
+    display: flex;
+    font-size: 1rem;
+    font-weight: bolder;
+    justify-content: center;
+}
+.test a{
+    padding: 8px 20px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+.test a:hover{
+    color: aquamarine;
+    font-weight: bolder;
+}
+.nav-item a:hover{
+    color: rgb(102, 187, 159);
+}
