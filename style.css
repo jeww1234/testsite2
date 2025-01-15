@@ -1,3 +1,7 @@
+/* *{
+  box-sizing: border-box;
+}
+
 .me-free {
   margin-right: 50px;
 }
@@ -130,7 +134,7 @@
 }
 
 .main {
-  margin-bottom: 1vh;
+  margin-bottom: 5vh;
 }
 
 .main img {
@@ -154,12 +158,12 @@
   padding: 10px;
 }
 
-.card{
+.card {
   display: flex;
   align-items: center;
   border-style: none;
 }
-.card img{
+.card img {
   width: clamp(10rem, 50vh, 90%);
 }
 .cardP {
@@ -170,15 +174,15 @@
   font-weight: bolder;
   font-size: clamp(0.8rem, 1vw, 3rem);
 }
-.cardP p{
+.cardP p {
   margin: 0;
 }
 
-.carouselBar{
+.carouselBar {
   margin: 0 0 10px 0;
 }
 
-.bottomCentent{
+.bottomCentent {
   background-color: aliceblue;
   padding: 20px;
 }
@@ -215,14 +219,15 @@
   display: block;
 }
 
-.smallImg1, .smallImg2{
+.smallImg1,
+.smallImg2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding-right: 5vw;
 }
 
-.smallImg1 span{
+.smallImg1 span {
   text-align: center;
   font-weight: bolder;
   font-size: 1.5vw;
@@ -231,7 +236,7 @@
   margin-left: 10%;
 }
 
-.smallImg2 span{
+.smallImg2 span {
   text-align: center;
   font-weight: bolder;
   font-size: 1.7vw;
@@ -240,13 +245,45 @@
   margin-left: 10%;
 }
 
+.midContent {
+  justify-content: center;
+  padding: 10px 10px;
+  max-height: 50vw;
+}
+
+.midContentImg {
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.midContentImg img {
+  border-radius: 10px;
+  padding-left: 50px;
+  max-height: 300px;
+}
+
+.midContentText {
+  flex-direction: column;
+  margin-left: 20px;
+  width: 50%;
+}
+.midContentText >div{
+  margin-top: 10px;
+}
+.midContentText a{
+  text-decoration: none;
+}
+.midContentText h4 {
+  font-weight: bolder;
+}
+
 @media (max-width: 1199px) {
   .navList a {
     font-size: 0.6rem;
   }
 
   .navLink2 {
-    font-size: clamp(1rem, 1vw, 1.2rem); 
+    font-size: clamp(1rem, 1vw, 1.2rem);
     font-weight: 550;
   }
 
@@ -257,20 +294,21 @@
   }
 }
 
-@media(max-width: 650px){
-  .smallImg{
+@media (max-width: 650px) {
+  .smallImg {
     display: none;
   }
-  .smallImg1, .smallImg2{
+  .smallImg1,
+  .smallImg2 {
     display: none;
   }
 }
 
-@media(max-width: 576px){
-  .bottomCentent{
+@media (max-width: 576px) {
+  .bottomCentent {
     text-align: center;
   }
-  .bottomCentent h4{
+  .bottomCentent h4 {
     background-color: azure;
   }
-}
+} */
