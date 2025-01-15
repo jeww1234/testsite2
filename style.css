@@ -180,7 +180,7 @@
 
 .bottomCentent{
   background-color: aliceblue;
-  padding: 30px;
+  padding: 20px;
 }
 .backTitle {
   position: absolute;
@@ -215,6 +215,31 @@
   display: block;
 }
 
+.smallImg1, .smallImg2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 5vw;
+}
+
+.smallImg1 span{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5vw;
+  display: block;
+  width: clamp(30%, 35%, 40%);
+  margin-left: 10%;
+}
+
+.smallImg2 span{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.7vw;
+  display: block;
+  width: clamp(30%, 35%, 40%);
+  margin-left: 10%;
+}
+
 @media (max-width: 1199px) {
   .navList a {
     font-size: 0.6rem;
@@ -229,6 +254,15 @@
     font-style: italic;
     font-weight: bolder;
     font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  }
+}
+
+@media(max-width: 650px){
+  .smallImg{
+    display: none;
+  }
+  .smallImg1, .smallImg2{
+    display: none;
   }
 }
 
